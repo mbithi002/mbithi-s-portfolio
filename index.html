@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mbithi - Distributed Systems Engineer</title>
+    <meta
+      name="description"
+      content="Software engineer specializing in distributed architectures and production-ready systems. Microservices, DevOps, full-stack, and AI systems engineering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a class="nav-logo" href="#hero"><span>Mbithi</span>.dev</a>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Navigation -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#ai">AI</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="full-width">
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Software Engineer - Systems & Infrastructure</p>
+        <h1 class="hero-title">
+          Distributed<br />
+          Architectures <em>&</em><br />
+          Production Systems.
+        </h1>
+        <p class="hero-sub">
+          I design and deploy scalable microservice-based systems that power
+          real businesses. From backend infrastructure to cross-platform
+          applications, built for reliability, maintainability, and growth.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Microservices</span>
+          <span class="tag">System Design</span>
+          <span class="tag">Production Deployment</span>
+          <span class="tag">DevOps</span>
+          <span class="tag">Full-Stack</span>
+          <span class="tag">AI Systems - Emerging</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">Scroll</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">01 - About</div>
+      <div class="about-grid reveal">
+        <div>
+          <h2 class="about-title">
+            I build systems,<br />not just interfaces.
+          </h2>
+          <div class="about-body">
+            <p>
+              I am a systems-oriented software engineer focused on building
+              production-ready applications backed by scalable architecture. My
+              engineering journey began in 2023 - but from day one, I approached
+              development with a bias toward how systems behave in production.
+            </p>
+            <p>
+              How services communicate. How deployments break. How monitoring
+              works. How architecture decisions shape long-term maintainability.
+              These questions drive my work.
+            </p>
+            <p>
+              I specialize in full-stack development across web, mobile, and
+              desktop - but my strength lies deeper: in backend systems,
+              distributed architectures, and deployment workflows that hold up
+              under real conditions.
+            </p>
+            <p>
+              Beyond engineering, I am a startup technical founder and
+              co-founder of Denahub, an initiative building scalable IT
+              solutions and bespoke software systems for real-world businesses.
+            </p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-num">2023</div>
+            <div class="stat-label">Engineering journey began</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Production systems deployed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3rd yr</div>
+            <div class="stat-label">BSc. Information Technology</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">Co-founder</div>
+            <div class="stat-label">Denahub - Active Startup</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PHILOSOPHY -->
+    <section id="philosophy" class="full-width">
+      <div>
+        <div class="section-label">02 - Engineering Philosophy</div>
+        <h2 class="philosophy-header reveal">How I Think About Systems</h2>
+        <p class="philosophy-lead reveal">
+          Most applications work. Few systems scale.
+        </p>
+        <div class="philosophy-grid reveal">
+          <div class="philosophy-card">
+            <div class="philosophy-card-num">01</div>
+            <div class="philosophy-card-title">Architecture First</div>
+            <div class="philosophy-card-body">
+              Before writing a line of code, I ask: how will services
+              communicate? Can this evolve into a distributed system? Is
+              modularity preserved? Architecture decisions made early compound
+              over time - in both directions.
+            </div>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-card-num">02</div>
+            <div class="philosophy-card-title">Production Realities</div>
+            <div class="philosophy-card-body">
+              Deployment is part of development. How is this monitored? How are
+              failures handled? How does it recover? Software that isn't
+              production-ready isn't ready at all. Observability and reliability
+              are features.
+            </div>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-card-num">03</div>
+            <div class="philosophy-card-title">Maintainability as a Goal</div>
+            <div class="philosophy-card-body">
+              Can another engineer extend this cleanly? Are responsibilities
+              separated properly? Microservices, modularity, MVC, MVVM - these
+              aren't aesthetic choices. They are tools used intentionally to
+              make systems last.
+            </div>
+          </div>
+        </div>
+        <div class="philosophy-footer reveal">
+          <blockquote>
+            <span>A feature is temporary.</span> Architecture is permanent.
+            Software is infrastructure - not just UI wrapped around a database.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- STACK -->
+    <section id="stack">
+      <div class="section-label">03 - Technical Capabilities</div>
+      <h2 class="stack-title reveal">
+        Built across the full stack.<br />Optimized for the backend.
+      </h2>
+      <div class="stack-grid reveal">
+        <div class="stack-group">
+          <div class="stack-group-title">Frontend & Cross-Platform</div>
+          <div class="stack-items">
+            <span class="stack-item">Next.js</span
+            ><span class="stack-item">React</span>
+            <span class="stack-item">Flutter</span
+            ><span class="stack-item">React Native</span>
+            <span class="stack-item">TypeScript</span
+            ><span class="stack-item">HTML/CSS/JS</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-title">Backend Engineering</div>
+          <div class="stack-items">
+            <span class="stack-item">Node.js</span
+            ><span class="stack-item">Express</span>
+            <span class="stack-item">FastAPI</span
+            ><span class="stack-item">Laravel</span>
+            <span class="stack-item">Python</span
+            ><span class="stack-item">PHP</span>
+            <span class="stack-item">Frappe / ERPNext</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-title">Databases & Caching</div>
+          <div class="stack-items">
+            <span class="stack-item">MongoDB</span
+            ><span class="stack-item">MongoDB Atlas</span>
+            <span class="stack-item">PostgreSQL</span
+            ><span class="stack-item">MySQL</span>
+            <span class="stack-item">Redis</span
+            ><span class="stack-item">Firebase</span>
+            <span class="stack-item">Appwrite</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-title">Cloud & DevOps</div>
+          <div class="stack-items">
+            <span class="stack-item">AWS EC2</span
+            ><span class="stack-item">AWS S3</span>
+            <span class="stack-item">Docker</span
+            ><span class="stack-item">Kubernetes</span>
+            <span class="stack-item">Nginx</span
+            ><span class="stack-item">Render</span>
+            <span class="stack-item">Netlify</span
+            ><span class="stack-item">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-title">Architecture Patterns</div>
+          <div class="stack-items">
+            <span class="stack-item">Microservices</span
+            ><span class="stack-item">RESTful APIs</span>
+            <span class="stack-item">GraphQL</span
+            ><span class="stack-item">MVC</span>
+            <span class="stack-item">MVVM</span
+            ><span class="stack-item">Feature-Based</span>
+            <span class="stack-item">Modular Backends</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-title">AI & ML Systems</div>
+          <div class="stack-items">
+            <span class="stack-item">HuggingFace</span
+            ><span class="stack-item">PEFT</span>
+            <span class="stack-item">TRL</span
+            ><span class="stack-item">RAG</span>
+            <span class="stack-item">AWS Bedrock</span
+            ><span class="stack-item">PyTorch</span>
+            <span class="stack-item">TensorFlow</span
+            ><span class="stack-item">W&B</span>
+            <span class="stack-item">GPT-4 API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="full-width">
+      <div>
+        <div class="section-label">04 - Featured Projects</div>
+        <h2 class="projects-title reveal">Engineering case studies.</h2>
+        <p class="projects-subtitle reveal">Click to expand each project</p>
+
+        <!-- Pulse -->
+        <div class="project-card reveal">
+          <div class="project-header" onclick="toggleProject(this)">
+            <div class="project-header-left">
+              <div class="project-index">01 / Flagship</div>
+              <div class="project-name">Pulse</div>
+              <div class="project-tagline">
+                Distributed uptime monitoring platform with alerting and
+                centralized control
+              </div>
+            </div>
+            <div class="project-expand-btn">+</div>
+          </div>
+          <div class="project-body">
+            <div class="project-detail-grid">
+              <div>
+                <div class="project-detail-title">Problem</div>
+                <div class="project-detail-body">
+                  Businesses need reliable, real-time monitoring of deployed
+                  services - with proper alerting, rate limiting, and
+                  centralized endpoint management - without complex
+                  infrastructure overhead.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Role</div>
+                <div class="project-detail-body">
+                  Founder & Full-Stack Developer - responsible for system
+                  architecture, monitoring engine design, API layer, and
+                  deployment infrastructure.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Stack & Architecture</div>
+                <div class="project-stack-tags">
+                  <span class="project-stack-tag">MERN</span>
+                  <span class="project-stack-tag">Microservices</span>
+                  <span class="project-stack-tag">Worker Queues</span>
+                  <span class="project-stack-tag">Cron Polling</span>
+                  <span class="project-stack-tag">Webhooks</span>
+                  <span class="project-stack-tag">Background Jobs</span>
+                  <span class="project-stack-tag">Redis</span>
+                  <span class="project-stack-tag">REST APIs</span>
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Impact</div>
+                <div class="project-detail-body">
+                  Validated by active users. Growing feature request volume
+                  confirms real-world demand. Demonstrates distributed backend
+                  thinking and production-grade reliability patterns.
+                </div>
+              </div>
+              <div class="project-challenge">
+                <div class="project-detail-title">
+                  Key Engineering Challenges
+                </div>
+                <div class="project-challenge-text">
+                  Scaling interval polling without overwhelming target servers →
+                  Securing submitted endpoints with end-to-end encryption →
+                  Preventing abuse through rate limiting → Ensuring reliable
+                  email alert delivery across distributed workers → Clean
+                  separation between monitoring workers and the API service
+                  layer → Integrating deploy hooks (e.g. Render) for
+                  platform-aware resolution.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Firesoko -->
+        <div class="project-card reveal">
+          <div class="project-header" onclick="toggleProject(this)">
+            <div class="project-header-left">
+              <div class="project-index">02 / Product</div>
+              <div class="project-name">Firesoko</div>
+              <div class="project-tagline">
+                White-label ecommerce platform - per-deployment, fully brandable
+              </div>
+            </div>
+            <div class="project-expand-btn">+</div>
+          </div>
+          <div class="project-body">
+            <div class="project-detail-grid">
+              <div>
+                <div class="project-detail-title">Problem</div>
+                <div class="project-detail-body">
+                  Businesses spend excessive time and resources building
+                  ecommerce platforms from scratch. Firesoko provides a
+                  market-ready, brandable, deployable solution - so
+                  entrepreneurs focus on service delivery, not infrastructure.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Role</div>
+                <div class="project-detail-body">
+                  Founder, Owner & Full-Stack Developer. Denahub holds the
+                  license for industrial use and distribution under agreed terms
+                  and conditions.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Stack & Architecture</div>
+                <div class="project-stack-tags">
+                  <span class="project-stack-tag">Flutter</span>
+                  <span class="project-stack-tag">Next.js</span>
+                  <span class="project-stack-tag">Firebase</span>
+                  <span class="project-stack-tag">Feature-Based</span>
+                  <span class="project-stack-tag">Role-Based Auth</span>
+                  <span class="project-stack-tag">Theme Overrides</span>
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Impact</div>
+                <div class="project-detail-body">
+                  Enables entrepreneurs to launch branded digital storefronts
+                  without development overhead. Each deployment is isolated per
+                  brand with separate dashboards, mobile apps, and web
+                  frontends.
+                </div>
+              </div>
+              <div class="project-challenge">
+                <div class="project-detail-title">Architecture Approach</div>
+                <div class="project-challenge-text">
+                  Per-deployment product - not multi-tenant SaaS. Each brand
+                  receives an extended version of the base system with theme
+                  overrides, asset replacements, and custom modules layered on
+                  top. This preserves core system integrity while enabling full
+                  brand-level customization without codebase fragmentation.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Haven Beauty -->
+        <div class="project-card reveal">
+          <div class="project-header" onclick="toggleProject(this)">
+            <div class="project-header-left">
+              <div class="project-index">03 / Freelance</div>
+              <div class="project-name">Haven Beauty</div>
+              <div class="project-tagline">
+                Production ecommerce platform with integrated CMS, CRM, and
+                local payment rails
+              </div>
+            </div>
+            <div class="project-expand-btn">+</div>
+          </div>
+          <div class="project-body">
+            <div class="project-detail-grid">
+              <div>
+                <div class="project-detail-title">Problem</div>
+                <div class="project-detail-body">
+                  A beauty brand needed a seamless client checkout experience
+                  alongside robust admin tooling for CMS and CRM - with local
+                  payment methods and production-grade SEO.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Role</div>
+                <div class="project-detail-body">
+                  Full-Stack Developer - frontend, backend, payment
+                  integrations, deployment, and SEO optimization.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Stack & Architecture</div>
+                <div class="project-stack-tags">
+                  <span class="project-stack-tag">Next.js</span>
+                  <span class="project-stack-tag">Node.js</span>
+                  <span class="project-stack-tag">Express</span>
+                  <span class="project-stack-tag">MongoDB Atlas</span>
+                  <span class="project-stack-tag">M-Pesa</span>
+                  <span class="project-stack-tag">Pesapal</span>
+                  <span class="project-stack-tag">Microservices</span>
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Impact</div>
+                <div class="project-detail-body">
+                  Drove measurable lead generation and sales growth. Reduced
+                  admin operational workload significantly through CMS
+                  automation. Achieved strong organic visibility through
+                  technical SEO optimization.
+                </div>
+              </div>
+              <div class="project-challenge">
+                <div class="project-detail-title">
+                  Key Engineering Challenges
+                </div>
+                <div class="project-challenge-text">
+                  Integrating M-Pesa (STK Push & C2B) and Pesapal within a
+                  unified checkout flow → Managing payment state across
+                  asynchronous mobile payment callbacks → Technical SEO at
+                  infrastructure level including structured data, metadata, and
+                  rendering optimization.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glimmers -->
+        <div class="project-card reveal">
+          <div class="project-header" onclick="toggleProject(this)">
+            <div class="project-header-left">
+              <div class="project-index">04 / Freelance</div>
+              <div class="project-name">Glimmers</div>
+              <div class="project-tagline">
+                Backend-powered marketing and distribution platform for a book
+              </div>
+            </div>
+            <div class="project-expand-btn">+</div>
+          </div>
+          <div class="project-body">
+            <div class="project-detail-grid">
+              <div>
+                <div class="project-detail-title">Problem</div>
+                <div class="project-detail-body">
+                  The Glimmers guidebook required a dedicated digital platform
+                  to drive marketing reach and handle distribution - with
+                  integrated payment processing and optimized search visibility.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Role</div>
+                <div class="project-detail-body">
+                  Backend Developer & DevOps - backend architecture, payment
+                  integration, production deployment, and SEO infrastructure.
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Stack & Architecture</div>
+                <div class="project-stack-tags">
+                  <span class="project-stack-tag">Next.js</span>
+                  <span class="project-stack-tag">Express</span>
+                  <span class="project-stack-tag">MongoDB Atlas</span>
+                  <span class="project-stack-tag">M-Pesa</span>
+                  <span class="project-stack-tag">Microservices</span>
+                  <span class="project-stack-tag">SEO</span>
+                </div>
+              </div>
+              <div>
+                <div class="project-detail-title">Impact</div>
+                <div class="project-detail-body">
+                  Generated consistent leads and drove digital sales.
+                  Demonstrated commercial backend execution - payment systems,
+                  deployment infrastructure, and search optimization in a
+                  production environment.
+                </div>
+              </div>
+              <div class="project-challenge">
+                <div class="project-detail-title">Focus Areas</div>
+                <div class="project-challenge-text">
+                  M-Pesa payment integration with async callback handling →
+                  Backend architecture for content and order management →
+                  DevOps: deployment pipeline, environment management, and
+                  server configuration → Technical SEO implementation for
+                  organic discoverability.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- DENAHUB -->
+    <section id="denahub">
+      <div class="section-label">05 - Startup</div>
+      <div class="denahub-grid reveal">
+        <div>
+          <div class="denahub-sub">Co-Founder</div>
+          <h2 class="denahub-title">Denahub</h2>
+          <p class="denahub-body">
+            Denahub is an active startup initiative focused on building scalable
+            IT systems, bespoke digital solutions, and product incubation
+            collaborations. It represents the intersection of engineering and
+            entrepreneurship - turning architecture thinking into operational
+            businesses.
+          </p>
+          <div class="denahub-pillars">
+            <div class="denahub-pillar">
+              <div class="denahub-pillar-dot"></div>
+              <div class="denahub-pillar-text">
+                Bespoke software systems & IT solutions
+              </div>
+            </div>
+            <div class="denahub-pillar">
+              <div class="denahub-pillar-dot"></div>
+              <div class="denahub-pillar-text">
+                Product incubation & SaaS collaboration
+              </div>
+            </div>
+            <div class="denahub-pillar">
+              <div class="denahub-pillar-dot"></div>
+              <div class="denahub-pillar-text">
+                Technical architecture & deployment infrastructure
+              </div>
+            </div>
+            <div class="denahub-pillar">
+              <div class="denahub-pillar-dot"></div>
+              <div class="denahub-pillar-text">
+                Industrial software licensing (Firesoko)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="denahub-logo-block">
+          <div class="denahub-wordmark">dena<br />hub</div>
+          <div class="denahub-badge">Active Startup</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- AI -->
+    <section id="ai" class="full-width">
+      <div>
+        <div class="section-label">06 - AI Systems</div>
+        <div class="ai-header-grid reveal">
+          <div>
+            <h2 class="ai-title">AI Engineering &<br />LLM Systems</h2>
+            <p class="ai-body">
+              Modern software engineering is evolving toward intelligent
+              systems. AI is not a feature - it is the next layer of system
+              design. I approach LLMs and generative AI the same way I approach
+              backend architecture: through structure, observability, and
+              production readiness. This is the next evolution of my engineering
+              path.
+            </p>
+          </div>
+          <div>
+            <div class="ai-status">
+              <div class="ai-status-label">Current Status</div>
+              <div class="ai-status-value">
+                Actively learning fine-tuning workflows, RAG systems, and
+                LLMOps. Publishing research logs as I progress.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-focus-grid reveal">
+          <div class="ai-focus-item">
+            <div class="ai-focus-icon">⊕</div>
+            <div class="ai-focus-title">LLM Fine-Tuning</div>
+            <div class="ai-focus-desc">
+              PEFT workflows, LoRA adapters, and task-specific fine-tuning using
+              HuggingFace Transformers and TRL. Domain-specific and
+              task-specific optimization.
+            </div>
+          </div>
+          <div class="ai-focus-item">
+            <div class="ai-focus-icon">◈</div>
+            <div class="ai-focus-title">RAG Systems</div>
+            <div class="ai-focus-desc">
+              Retrieval-Augmented Generation pipeline design - embedding stores,
+              retrieval strategies, and LLM integration for context-aware
+              inference.
+            </div>
+          </div>
+          <div class="ai-focus-item">
+            <div class="ai-focus-icon">◎</div>
+            <div class="ai-focus-title">LLMOps</div>
+            <div class="ai-focus-desc">
+              Experiment tracking with Weights & Biases, model evaluation
+              frameworks, AWS Bedrock integrations, and observability in
+              AI-powered systems.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-label">07 - Contact</div>
+      <div class="contact-grid reveal">
+        <div>
+          <h2 class="contact-title">Let's build systems<br />that scale.</h2>
+          <p class="contact-body">
+            If you're building something that requires scalable architecture,
+            production-level thinking, or systems that need to grow - let's
+            connect.
+          </p>
+          <div class="contact-open-to">
+            <div class="open-to-item">Full-time engineering roles</div>
+            <div class="open-to-item">
+              Contract backend & systems architecture
+            </div>
+            <div class="open-to-item">Freelance development engagements</div>
+            <div class="open-to-item">Technical collaboration</div>
+          </div>
+          <div class="contact-socials">
+            <a href="mailto:hello@mbithi.dev" class="social-link">Email</a>
+            <a href="https://github.com" target="_blank" class="social-link"
+              >GitHub</a
+            >
+            <a href="https://linkedin.com" target="_blank" class="social-link"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea
+              class="form-textarea"
+              placeholder="Tell me what you're building..."
+            ></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-left">© 2025 Mbithi - Systems Engineer</div>
+      <div class="footer-right">Built with intent.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
